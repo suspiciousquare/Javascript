@@ -1,0 +1,12 @@
+Synchronous Approach:
+executed in sequence
+each statement waits for the previous statement to finish before executing
+
+Asynchronous Approach:
+Asynchronous code doesn't have to wait
+Your program can continue to rin
+It helps in reducing the waiting time for the user
+
+callback
+promises 
+async/await
