@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*var name = "Mr. King";
+        var regex1 = /^Mr\./;
+        var regex2 = new RegExp("^Mr\\.");
+        if (regex2.test(name)){
+            document.write("good");
+        } else {
+            document.write("bad");
+        }
+
+        var regex = /ca[kf]e/g;
+        var str = "He was eating cake in the cafe.";
+        if (regex.test(str)){
+            document.write("Awesome");
+        } else {
+            document.write("Exceptional");
+        }
+
+        var matches = str.match(regex);
+        document.write(`Found ${matches.length} and matches elements are : ${matches}`)
+        
+        var regex3 = /\s/g;
+        var replacement = "-";
+        var str= "TIT for TAT\nDo\tGood";
+        document.write("<pre>" + str + "</pre>");
+        document.write("<pre>" + str.replace(regex3,replacement) + "</pre>");
+        document.write("<pre>" + str.replace(/ /g,"$") + "</pre>");
+
+        var regex4 = /[\s,]+/;
+        var str = "My favourite colors are red, green and blue";
+        var parts = str.split(regex4);
+        document.write(parts);
+
+        var regex5 = /d$/;
+        var names = ["John Smith", "James Bond", "Clark Kent"];
+
+        for ( var name of names){
+            if (regex5.test(name)){
+                document.write(`<p>${name}</p>`);
+            }
+        }
+
+        var str = "Color red is more visible than the color blue in daylight.";
+        var regex = /color/g;
+        var regex2 = /color/gi;
+
+        var matches = str.match(regex);
+        document.write(`Found ${matches.length} and matches elements are : ${matches}`);
+
+        var matches = str.match(regex2);
+        document.write(`Found ${matches.length} and matches elements are : ${matches}`);*/
+
+        var regex = /fox|dog|cat/;
+        var str = "The quick brown fox jumps over the lazy dog.";
+        var matches = str.match(regex);
+        document.write(`Found ${matches.length} and matches elements are : ${matches}`);
+
+                
+    </script>
+</body>
+</html>

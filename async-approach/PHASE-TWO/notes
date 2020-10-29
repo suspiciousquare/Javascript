@@ -1,0 +1,11 @@
+working with typescript
+angular - client side javascript framework
+nodejs - server side javascript framework
+
+Typescript:
+    open source
+    superset of javascript that can be compiled to plain javascript
+    a typed-support or strongly-typed language
+    value: number = 100;
+    value = "King" would give an error
+    

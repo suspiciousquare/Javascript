@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="firstName"/>
+        <button class="save">Store Name (Local Storage)</button>
+        <button class="access">Get Name (Local Storage)</button>
+        <button class="remove">Remove Name (Local Storage)</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script>
+        if (localStorage){
+            $(document).ready(function (){
+                $(".save").click(function(){
+                    var fName = $("#firstName").val();
+                    localStorage.setItem("first_name", fName);
+                    alert('Name saved');
+                })
+                $(".access").click(function (){
+                    alert("HI " + localStorage.getItem("first_name"));
+                })
+                $(".remove").click(function (){
+                    localStorage.removeItem("first_name");
+                    alert('Name is removed from local storage');
+                })
+            })
+        } else{
+            alert('localStorage is empty')
+        }
+    </script>
+    </body>
+</html>
